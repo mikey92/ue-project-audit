@@ -51,9 +51,11 @@ UnrealEditor-Cmd YourProject.uproject -run=pythonscript -script=/path/to/Tests/s
 
 Result: `Saved/audit_selftest.json` (`all_pass: true`). Run it in a scratch project; it deletes and recreates `/Game/AuditFixtures`.
 
-## Pro (planned)
+## Pro
 
-One-click fixes (fix redirectors, rename to convention with reference fix-up, move unreferenced assets to a quarantine folder), custom naming rules per project, size budgets per folder, and a CI commandlet that fails the build with an HTML/JUnit report. Tell us what you need in Issues.
+**Project Audit Pro** adds what Lite leaves out: one-click fixes (fix redirectors, rename to convention with reference fix-up, move unreferenced assets to a quarantine folder), per-project rules in `Config/ProjectAudit.json` (your own prefixes, ignored folders, texture budgets per folder), a Tools menu, an HTML report, and a CI commandlet that fails the build with HTML, JSON and JUnit reports. 12 MCP tools, every fix previews first.
+
+Docs and screenshots: https://mikey92.github.io/project-audit/ (Fab listing coming soon)
 
 ## License
 
