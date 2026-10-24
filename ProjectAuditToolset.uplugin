@@ -1,21 +1,30 @@
 {
 	"FileVersion": 3,
-	"Version": 1,
-	"VersionName": "0.1.0",
+	"Version": 2,
+	"VersionName": "1.0.0",
 	"FriendlyName": "Project Audit Toolset (Lite)",
 	"Description": "Project health checks for Unreal Engine that AI agents can call over MCP: unreferenced assets, redirectors, naming conventions, oversized or non power-of-two textures, broken Blueprints.",
 	"Category": "Editor",
 	"CreatedBy": "BCD",
-	"CreatedByURL": "",
-	"DocsURL": "",
+	"CreatedByURL": "https://mikey92.github.io/project-audit/",
+	"DocsURL": "https://github.com/mikey92/ue-project-audit#readme",
 	"MarketplaceURL": "",
-	"SupportURL": "",
+	"SupportURL": "https://github.com/mikey92/ue-project-audit/issues",
+	"EngineVersion": "5.8.0",
 	"EditorOnly": true,
 	"CanContainContent": true,
-	"IsBetaVersion": true,
+	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
 	"EnabledByDefault": false,
+	"Modules": [
+		{
+			"Name": "ProjectAuditToolset",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [ "Win64", "Mac", "Linux" ]
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "PythonScriptPlugin",

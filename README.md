@@ -18,7 +18,7 @@ Everything is **read-only**. Nothing is renamed, moved or deleted.
 
 ## Install
 
-1. Copy this folder to `YourProject/Plugins/ProjectAuditToolset`.
+1. Install it free from Fab, or copy this folder to `YourProject/Plugins/ProjectAuditToolset`.
 2. Enable **Project Audit Toolset (Lite)**, **Model Context Protocol** and **All Toolsets** in *Edit > Plugins*, restart the editor.
 3. In the editor console run `ModelContextProtocol.StartServer`, then `ModelContextProtocol.GenerateClientConfig ClaudeCode` to connect Claude Code.
 4. Ask your agent: *"Run audit_project on /Game and summarize what to fix first."*

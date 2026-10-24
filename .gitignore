@@ -4,3 +4,4 @@ __pycache__/
 Binaries/
 Intermediate/
 Saved/
+dist/
