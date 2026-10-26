@@ -43,7 +43,7 @@ print(audit.to_json(audit.run_all("/Game", include_blueprints=True)))
 
 ## Tests
 
-Developer tests (`Tests/selftest.py`) are in the GitHub repository: https://github.com/mikey92/ue-project-audit
+Developer tests are kept in the GitHub repository (https://github.com/mikey92/ue-project-audit) and are not part of the Fab package.
 
 ## Pro
 
