@@ -15,7 +15,7 @@ import zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NAME = "ProjectAuditToolset"
-INCLUDE = ["ProjectAuditToolset.uplugin", "README.md", "LICENSE", "Config", "Content", "Resources", "Source", "Tests"]
+INCLUDE = ["ProjectAuditToolset.uplugin", "README.md", "LICENSE", "Config", "Content", "Resources", "Source"]
 SKIP_DIRS = {"Binaries", "Intermediate", "Saved", "__pycache__", ".git"}
 SKIP_FILES = {".DS_Store"}
 SOURCE_EXT = (".h", ".hpp", ".cpp", ".inl", ".cs")
@@ -48,6 +48,8 @@ def check(files, descriptor):
         if not descriptor.get(key):
             errors.append(f".uplugin {key} is empty")
     for rel in files:
+        if rel.endswith(".py") and not rel.startswith("Content/Python/"):
+            errors.append(f"{rel}: Fab wants Python only under Content/Python")
         if rel.lower().endswith((".exe", ".msi")):
             errors.append(f"{rel}: executables are not allowed")
         if len(f"{NAME}/{rel}") > MAX_PATH:

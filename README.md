@@ -43,13 +43,7 @@ print(audit.to_json(audit.run_all("/Game", include_blueprints=True)))
 
 ## Tests
 
-`Tests/selftest.py` builds fixture assets under `/Game/AuditFixtures` and checks every audit against them:
-
-```
-UnrealEditor-Cmd YourProject.uproject -run=pythonscript -script=/path/to/Tests/selftest.py -unattended -nullrhi
-```
-
-Result: `Saved/audit_selftest.json` (`all_pass: true`). Run it in a scratch project; it deletes and recreates `/Game/AuditFixtures`.
+Developer tests (`Tests/selftest.py`) are in the GitHub repository: https://github.com/mikey92/ue-project-audit
 
 ## Pro
 
